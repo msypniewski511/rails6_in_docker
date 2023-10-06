@@ -5,8 +5,7 @@ Label maintainer="msypniewski511@gmail.com"
 RUN apt-get update -yqq && apt-get install -yqq --no-install-recommends \
 	apt-transport-https \
 	ca-certificates curl gnupg \
-	postgresql-client \
-	openssl
+	postgresql-client
 
 # Ensure we install an up-to-date version of Node
 # See https://github.com/yarnpkg/yarn/issues/2888
@@ -37,8 +36,5 @@ RUN bundle install
 RUN rails webpacker:install
 
 COPY . /usr/src/app/
-
-RUN node --version
-RUN export NODE_OPTIONS=--openssl-legacy-provider
 
 CMD ["bin/rails", "s", "-b", "0.0.0.0"]
