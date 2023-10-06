@@ -16,5 +16,5 @@ jobs:
       - name: Build the hello-docker Docker image
         run: |
           docker build -f Dockerfile.prod . --tag ghcr.io/msypniewski511/rails_6_in_docker:latest
-          docker run ghcr.io/msypniewski511/rails_6_in_docker:latest
+          # docker run ghcr.io/msypniewski511/rails_6_in_docker:latest
           docker push ghcr.io/msypniewski511/rails_6_in_docker:latest
