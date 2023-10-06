@@ -2,7 +2,7 @@ services:
   web:
     image: ghcr.io/msypniewski511/rails_6_in_docker:latest
     ports:
-      - "80:3000"
+      - '80:3000'
     env_file:
       - .env/production/database
       - .env/production/web
@@ -13,17 +13,17 @@ services:
   database:
     image: postgres
     env_file:
-     - .env/production/database
+      - .env/production/database
     volumes:
       - db_data:/var/lib/postgresql/data
-  db-migrator:
-    image: ghcr.io/msypniewski511/rails_6_in_docker:latest
-    command: ["./wait-for", "--timeout=300", "database:5432", "--", "bin/rails", "db:migrate"]
-    env_file:
-      - .env/production/database
-      - .env/production/web
-    deploy:
-      restart_policy:
-        condition: none
+  # db-migrator:
+  #   image: ghcr.io/msypniewski511/rails_6_in_docker:latest
+  #   command: ["./wait-for", "--timeout=300", "database:5432", "--", "bin/rails", "db:migrate"]
+  #   env_file:
+  #     - .env/production/database
+  #     - .env/production/web
+  #   deploy:
+  #     restart_policy:
+  #       condition: none
 volumes:
   db_data:
