@@ -25,6 +25,7 @@ RUN echo "deb [signed-by=/etc/apt/trusted.gpg.d/yarn.gpg] https://dl.yarnpkg.com
 
 # Install packages
 RUN apt-get update -yqq && apt-get install -yqq --no-install-recommends \
+	netcat \ # needed for 'wait-for' TCP connection checking
 	nodejs -y \
 	yarn
 
@@ -36,5 +37,6 @@ RUN bundle install
 RUN rails webpacker:install
 
 COPY . /usr/src/app/
+RUN ["chmod", "+x", "/usr/src/app/wait-for"]
 
 CMD ["bin/rails", "s", "-b", "0.0.0.0"]
