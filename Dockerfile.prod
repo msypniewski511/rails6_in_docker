@@ -25,7 +25,7 @@ RUN echo "deb [signed-by=/etc/apt/trusted.gpg.d/yarn.gpg] https://dl.yarnpkg.com
 
 # Install packages
 RUN apt-get update -yqq && apt-get install -yqq --no-install-recommends \
-	netcat \
+	netcat -y \
 	nodejs -y \
 	yarn
 
