@@ -1,0 +1,40 @@
+FROM ruby:3.2.2
+Label maintainer="msypniewski511@gmail.com"
+
+# Allow apt to work with https-based sources
+RUN apt-get update -yqq && apt-get install -yqq --no-install-recommends \
+	apt-transport-https \
+	ca-certificates curl gnupg \
+	postgresql-client
+
+# Ensure we install an up-to-date version of Node
+# See https://github.com/yarnpkg/yarn/issues/2888
+# 1. Download and import the Nodesource GPG key
+RUN mkdir -p /etc/apt/keyrings
+RUN curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg
+
+# 2. Create deb repository
+RUN echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_20.x nodistro main" | tee /etc/apt/sources.list.d/nodesource.list
+
+# Ensure latest packages for Yarn
+# 1. Add the GPpg key
+RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | gpg --dearmor | tee /etc/apt/trusted.gpg.d/yarn.gpg
+
+# 2. Add Yarn repository
+RUN echo "deb [signed-by=/etc/apt/trusted.gpg.d/yarn.gpg] https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
+
+# Install packages
+RUN apt-get update -yqq && apt-get install -yqq --no-install-recommends \
+	nodejs -y \
+	yarn
+
+
+COPY Gemfile* /usr/src/app/
+WORKDIR /usr/src/app
+RUN bundle install
+
+RUN rails webpacker:install
+
+COPY . /usr/src/app/
+
+CMD ["bin/rails", "s", "-b", "0.0.0.0"]
