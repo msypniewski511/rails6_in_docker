@@ -1,5 +1,5 @@
 FROM ruby:3.2.2
-Label maintainer="msypniewski511@gmail.com"
+LABEL maintainer="msypniewski511@gmail.com"
 
 # Allow apt to work with https-based sources
 RUN apt-get update -yqq && apt-get install -yqq --no-install-recommends \
@@ -36,5 +36,10 @@ RUN bundle install
 RUN rails webpacker:install
 
 COPY . /usr/src/app/
+
+# Add a script to be executed every time the container starts.
+COPY entrypoint.sh /usr/bin/
+RUN chmod +x /usr/bin/entrypoint.sh
+ENTRYPOINT ["entrypoint.sh"]
 
 CMD ["bin/rails", "s", "-b", "0.0.0.0"]

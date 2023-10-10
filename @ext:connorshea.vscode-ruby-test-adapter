@@ -1,0 +1,91 @@
+[2023-10-10 02:03:46.774] [INFO] Test Explorer found
+[2023-10-10 02:03:46.774] [INFO] Creating adapter for /home/maciej/docker/rails-v6/myapp6
+[2023-10-10 02:03:46.774] [INFO] Initializing Ruby adapter
+[2023-10-10 02:03:46.774] [INFO] Registering adapter for /home/maciej/docker/rails-v6/myapp6
+[2023-10-10 02:03:46.775] [INFO] Loading Ruby tests...
+[2023-10-10 02:03:46.776] [INFO] Loading Minitest tests...
+[2023-10-10 02:03:46.776] [INFO] Getting a list of Minitest tests in suite with the following command: bundle exec rake -R $EXT_DIR vscode:minitest:list
+[2023-10-10 02:03:46.805] [INFO] Initialization finished
+[2023-10-10 02:03:47.554] [INFO] Configuration changed
+[2023-10-10 02:03:47.802] [ERROR] Error while finding Minitest test suite: Command failed: bundle exec rake -R $EXT_DIR vscode:minitest:list
+/home/maciej/.rvm/gems/ruby-3.1.2/gems/bundler-2.4.10/lib/bundler/definition.rb:442:in `validate_ruby!': Your Ruby version is 3.1.2, but your Gemfile specified 3.2.2 (Bundler::RubyVersionMismatch)
+	from /home/maciej/.rvm/gems/ruby-3.1.2/gems/bundler-2.4.10/lib/bundler/definition.rb:417:in `validate_runtime!'
+	from /home/maciej/.rvm/gems/ruby-3.1.2/gems/bundler-2.4.10/lib/bundler.rb:165:in `setup'
+	from /home/maciej/.rvm/gems/ruby-3.1.2/gems/bundler-2.4.10/lib/bundler/setup.rb:23:in `block in <top (required)>'
+	from /home/maciej/.rvm/gems/ruby-3.1.2/gems/bundler-2.4.10/lib/bundler/ui/shell.rb:159:in `with_level'
+	from /home/maciej/.rvm/gems/ruby-3.1.2/gems/bundler-2.4.10/lib/bundler/ui/shell.rb:111:in `silence'
+	from /home/maciej/.rvm/gems/ruby-3.1.2/gems/bundler-2.4.10/lib/bundler/setup.rb:23:in `<top (required)>'
+	from <internal:/home/maciej/.rvm/rubies/ruby-3.1.2/lib/ruby/site_ruby/3.1.0/rubygems/core_ext/kernel_require.rb>:86:in `require'
+	from <internal:/home/maciej/.rvm/rubies/ruby-3.1.2/lib/ruby/site_ruby/3.1.0/rubygems/core_ext/kernel_require.rb>:86:in `require'
+	from /home/maciej/.rvm/rubies/ruby-3.1.2/lib/ruby/site_ruby/3.1.0/rubygems.rb:1370:in `<top (required)>'
+	from <internal:gem_prelude>:2:in `require'
+	from <internal:gem_prelude>:2:in `<internal:gem_prelude>'
+
+[2023-10-10 02:03:47.802] [ERROR] Output: 
+[2023-10-10 02:03:48.204] [INFO] Configuration changed
+[2023-10-10 02:04:28.323] [INFO] /home/maciej/docker/rails-v6/myapp6/docker-stack.yml was saved - checking if this effects /home/maciej/docker/rails-v6/myapp6
+[2023-10-10 02:04:28.323] [INFO] Sending autorun event
+[2023-10-10 02:04:31.594] [INFO] /home/maciej/docker/rails-v6/myapp6/docker-stack.yml was saved - checking if this effects /home/maciej/docker/rails-v6/myapp6
+[2023-10-10 02:04:31.595] [INFO] Sending autorun event
+[2023-10-10 02:04:32.004] [INFO] /home/maciej/docker/rails-v6/myapp6/docker-stack.yml was saved - checking if this effects /home/maciej/docker/rails-v6/myapp6
+[2023-10-10 02:04:32.005] [INFO] Sending autorun event
+[2023-10-10 02:32:27.527] [INFO] /home/maciej/docker/rails-v6/myapp6/Dockerfile.prod was saved - checking if this effects /home/maciej/docker/rails-v6/myapp6
+[2023-10-10 02:32:27.527] [INFO] Sending autorun event
+[2023-10-10 02:32:31.578] [INFO] /home/maciej/docker/rails-v6/myapp6/Dockerfile.prod was saved - checking if this effects /home/maciej/docker/rails-v6/myapp6
+[2023-10-10 02:32:31.578] [INFO] Sending autorun event
+[2023-10-10 02:48:38.412] [INFO] Test Explorer found
+[2023-10-10 02:48:38.412] [INFO] Creating adapter for /home/maciej/docker/rails-v6/myapp6
+[2023-10-10 02:48:38.412] [INFO] Initializing Ruby adapter
+[2023-10-10 02:48:38.412] [INFO] Registering adapter for /home/maciej/docker/rails-v6/myapp6
+[2023-10-10 02:48:38.413] [INFO] Loading Ruby tests...
+[2023-10-10 02:48:38.414] [INFO] Loading Minitest tests...
+[2023-10-10 02:48:38.414] [INFO] Getting a list of Minitest tests in suite with the following command: bundle exec rake -R $EXT_DIR vscode:minitest:list
+[2023-10-10 02:48:38.434] [INFO] Initialization finished
+[2023-10-10 02:48:39.727] [ERROR] Error while finding Minitest test suite: Command failed: bundle exec rake -R $EXT_DIR vscode:minitest:list
+/home/maciej/.rvm/gems/ruby-3.1.2/gems/bundler-2.4.10/lib/bundler/definition.rb:442:in `validate_ruby!': Your Ruby version is 3.1.2, but your Gemfile specified 3.2.2 (Bundler::RubyVersionMismatch)
+	from /home/maciej/.rvm/gems/ruby-3.1.2/gems/bundler-2.4.10/lib/bundler/definition.rb:417:in `validate_runtime!'
+	from /home/maciej/.rvm/gems/ruby-3.1.2/gems/bundler-2.4.10/lib/bundler.rb:165:in `setup'
+	from /home/maciej/.rvm/gems/ruby-3.1.2/gems/bundler-2.4.10/lib/bundler/setup.rb:23:in `block in <top (required)>'
+	from /home/maciej/.rvm/gems/ruby-3.1.2/gems/bundler-2.4.10/lib/bundler/ui/shell.rb:159:in `with_level'
+	from /home/maciej/.rvm/gems/ruby-3.1.2/gems/bundler-2.4.10/lib/bundler/ui/shell.rb:111:in `silence'
+	from /home/maciej/.rvm/gems/ruby-3.1.2/gems/bundler-2.4.10/lib/bundler/setup.rb:23:in `<top (required)>'
+	from <internal:/home/maciej/.rvm/rubies/ruby-3.1.2/lib/ruby/site_ruby/3.1.0/rubygems/core_ext/kernel_require.rb>:86:in `require'
+	from <internal:/home/maciej/.rvm/rubies/ruby-3.1.2/lib/ruby/site_ruby/3.1.0/rubygems/core_ext/kernel_require.rb>:86:in `require'
+	from /home/maciej/.rvm/rubies/ruby-3.1.2/lib/ruby/site_ruby/3.1.0/rubygems.rb:1370:in `<top (required)>'
+	from <internal:gem_prelude>:2:in `require'
+	from <internal:gem_prelude>:2:in `<internal:gem_prelude>'
+
+[2023-10-10 02:48:39.727] [ERROR] Output: 
+[2023-10-10 02:49:27.547] [INFO] /home/maciej/docker/rails-v6/myapp6/entrypoint.sh was saved - checking if this effects /home/maciej/docker/rails-v6/myapp6
+[2023-10-10 02:49:27.547] [INFO] Sending autorun event
+[2023-10-10 02:49:28.810] [INFO] /home/maciej/docker/rails-v6/myapp6/entrypoint.sh was saved - checking if this effects /home/maciej/docker/rails-v6/myapp6
+[2023-10-10 02:49:28.811] [INFO] Sending autorun event
+[2023-10-10 02:53:39.382] [INFO] /home/maciej/docker/rails-v6/myapp6/Dockerfile was saved - checking if this effects /home/maciej/docker/rails-v6/myapp6
+[2023-10-10 02:53:39.382] [INFO] Sending autorun event
+[2023-10-10 02:53:55.978] [INFO] /home/maciej/docker/rails-v6/myapp6/Dockerfile was saved - checking if this effects /home/maciej/docker/rails-v6/myapp6
+[2023-10-10 02:53:55.978] [INFO] Sending autorun event
+[2023-10-10 02:54:41.916] [INFO] /home/maciej/docker/rails-v6/myapp6/docker-compose.yml was saved - checking if this effects /home/maciej/docker/rails-v6/myapp6
+[2023-10-10 02:54:41.916] [INFO] Sending autorun event
+[2023-10-10 02:54:44.653] [INFO] /home/maciej/docker/rails-v6/myapp6/docker-compose.yml was saved - checking if this effects /home/maciej/docker/rails-v6/myapp6
+[2023-10-10 02:54:44.654] [INFO] Sending autorun event
+[2023-10-10 02:54:48.137] [INFO] /home/maciej/docker/rails-v6/myapp6/docker-compose.yml was saved - checking if this effects /home/maciej/docker/rails-v6/myapp6
+[2023-10-10 02:54:48.138] [INFO] Sending autorun event
+[2023-10-10 02:57:31.381] [INFO] /home/maciej/docker/rails-v6/myapp6/docker-stack.yml was saved - checking if this effects /home/maciej/docker/rails-v6/myapp6
+[2023-10-10 02:57:31.382] [INFO] Sending autorun event
+[2023-10-10 02:57:31.804] [INFO] /home/maciej/docker/rails-v6/myapp6/docker-stack.yml was saved - checking if this effects /home/maciej/docker/rails-v6/myapp6
+[2023-10-10 02:57:31.804] [INFO] Sending autorun event
+[2023-10-10 03:02:44.985] [INFO] /home/maciej/docker/rails-v6/myapp6/Dockerfile was saved - checking if this effects /home/maciej/docker/rails-v6/myapp6
+[2023-10-10 03:02:44.985] [INFO] Sending autorun event
+[2023-10-10 03:02:46.428] [INFO] /home/maciej/docker/rails-v6/myapp6/Dockerfile was saved - checking if this effects /home/maciej/docker/rails-v6/myapp6
+[2023-10-10 03:02:46.429] [INFO] Sending autorun event
+[2023-10-10 03:04:24.552] [INFO] Configuration changed
+[2023-10-10 03:05:12.685] [INFO] /home/maciej/docker/rails-v6/myapp6/Dockerfile.prod was saved - checking if this effects /home/maciej/docker/rails-v6/myapp6
+[2023-10-10 03:05:12.686] [INFO] Sending autorun event
+[2023-10-10 03:05:14.641] [INFO] /home/maciej/docker/rails-v6/myapp6/Dockerfile.prod was saved - checking if this effects /home/maciej/docker/rails-v6/myapp6
+[2023-10-10 03:05:14.641] [INFO] Sending autorun event
+[2023-10-10 03:05:14.801] [INFO] /home/maciej/docker/rails-v6/myapp6/Dockerfile.prod was saved - checking if this effects /home/maciej/docker/rails-v6/myapp6
+[2023-10-10 03:05:14.801] [INFO] Sending autorun event
+[2023-10-10 03:08:17.289] [INFO] /home/maciej/docker/rails-v6/myapp6/Dockerfile.prod was saved - checking if this effects /home/maciej/docker/rails-v6/myapp6
+[2023-10-10 03:08:17.289] [INFO] Sending autorun event
+[2023-10-10 03:08:17.635] [INFO] /home/maciej/docker/rails-v6/myapp6/Dockerfile.prod was saved - checking if this effects /home/maciej/docker/rails-v6/myapp6
+[2023-10-10 03:08:17.635] [INFO] Sending autorun event

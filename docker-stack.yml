@@ -1,6 +1,9 @@
+version: '3'
+
 services:
   web:
     image: ghcr.io/msypniewski511/rails_6_in_docker:latest
+    command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
     ports:
       - '80:3000'
     env_file:
@@ -19,7 +22,15 @@ services:
 
   db-creator:
     image: ghcr.io/msypniewski511/rails_6_in_docker:latest
-    command: ['bin/rails', 'db:create']
+    command:
+      [
+        './wait-for',
+        '--timeout=300',
+        'database:5432',
+        '--',
+        'bin/rails',
+        'db:create',
+      ]
     env_file:
       - .env/production/database
       - .env/production/web
@@ -29,7 +40,15 @@ services:
 
   db-migrator:
     image: ghcr.io/msypniewski511/rails_6_in_docker:latest
-    command: ['bin/rails', 'db:migrate']
+    command:
+      [
+        './wait-for',
+        '--timeout=310',
+        'database:5432',
+        '--',
+        'bin/rails',
+        'db:migrate',
+      ]
     env_file:
       - .env/production/database
       - .env/production/web
