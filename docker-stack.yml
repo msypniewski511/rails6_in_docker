@@ -11,14 +11,16 @@ services:
       - .env/production/web
 
   redis:
-    image: redis
+    image: redis:6.0
+    restart: always
 
   database:
-    image: postgres
+    image: postgres:12
     env_file:
       - .env/production/database
     volumes:
       - db_data:/var/lib/postgresql/data
+    restart: always
 
   db-creator:
     image: ghcr.io/msypniewski511/rails_6_in_docker:latest

@@ -89,3 +89,35 @@
 [2023-10-10 03:08:17.289] [INFO] Sending autorun event
 [2023-10-10 03:08:17.635] [INFO] /home/maciej/docker/rails-v6/myapp6/Dockerfile.prod was saved - checking if this effects /home/maciej/docker/rails-v6/myapp6
 [2023-10-10 03:08:17.635] [INFO] Sending autorun event
+[2023-10-18 12:33:15.041] [INFO] Test Explorer found
+[2023-10-18 12:33:15.041] [INFO] Creating adapter for /home/maciej/docker/rails-v6/myapp6
+[2023-10-18 12:33:15.041] [INFO] Initializing Ruby adapter
+[2023-10-18 12:33:15.041] [INFO] Registering adapter for /home/maciej/docker/rails-v6/myapp6
+[2023-10-18 12:33:15.043] [INFO] Loading Ruby tests...
+[2023-10-18 12:33:15.045] [INFO] Loading Minitest tests...
+[2023-10-18 12:33:15.046] [INFO] Getting a list of Minitest tests in suite with the following command: bundle exec rake -R $EXT_DIR vscode:minitest:list
+[2023-10-18 12:33:15.063] [INFO] Initialization finished
+[2023-10-18 12:33:15.935] [ERROR] Error while finding Minitest test suite: Command failed: bundle exec rake -R $EXT_DIR vscode:minitest:list
+/home/maciej/.rvm/gems/ruby-3.1.2/gems/bundler-2.4.10/lib/bundler/definition.rb:442:in `validate_ruby!': Your Ruby version is 3.1.2, but your Gemfile specified 3.2.2 (Bundler::RubyVersionMismatch)
+	from /home/maciej/.rvm/gems/ruby-3.1.2/gems/bundler-2.4.10/lib/bundler/definition.rb:417:in `validate_runtime!'
+	from /home/maciej/.rvm/gems/ruby-3.1.2/gems/bundler-2.4.10/lib/bundler.rb:165:in `setup'
+	from /home/maciej/.rvm/gems/ruby-3.1.2/gems/bundler-2.4.10/lib/bundler/setup.rb:23:in `block in <top (required)>'
+	from /home/maciej/.rvm/gems/ruby-3.1.2/gems/bundler-2.4.10/lib/bundler/ui/shell.rb:159:in `with_level'
+	from /home/maciej/.rvm/gems/ruby-3.1.2/gems/bundler-2.4.10/lib/bundler/ui/shell.rb:111:in `silence'
+	from /home/maciej/.rvm/gems/ruby-3.1.2/gems/bundler-2.4.10/lib/bundler/setup.rb:23:in `<top (required)>'
+	from <internal:/home/maciej/.rvm/rubies/ruby-3.1.2/lib/ruby/site_ruby/3.1.0/rubygems/core_ext/kernel_require.rb>:86:in `require'
+	from <internal:/home/maciej/.rvm/rubies/ruby-3.1.2/lib/ruby/site_ruby/3.1.0/rubygems/core_ext/kernel_require.rb>:86:in `require'
+	from /home/maciej/.rvm/rubies/ruby-3.1.2/lib/ruby/site_ruby/3.1.0/rubygems.rb:1370:in `<top (required)>'
+	from <internal:gem_prelude>:2:in `require'
+	from <internal:gem_prelude>:2:in `<internal:gem_prelude>'
+
+[2023-10-18 12:33:15.935] [ERROR] Output: 
+[2023-10-18 12:34:59.125] [INFO] /home/maciej/.config/Code/User/settings.json was saved - checking if this effects /home/maciej/docker/rails-v6/myapp6
+[2023-10-18 12:34:59.166] [INFO] Configuration changed
+[2023-10-18 12:44:21.150] [INFO] /home/maciej/docker/rails-v6/myapp6/docker-stack.yml was saved - checking if this effects /home/maciej/docker/rails-v6/myapp6
+[2023-10-18 12:44:21.153] [INFO] Sending autorun event
+[2023-10-18 12:44:49.875] [INFO] /home/maciej/docker/rails-v6/myapp6/docker-stack.yml was saved - checking if this effects /home/maciej/docker/rails-v6/myapp6
+[2023-10-18 12:44:49.875] [INFO] Sending autorun event
+[2023-10-18 12:44:52.852] [INFO] Configuration changed
+[2023-10-18 12:46:28.221] [INFO] /home/maciej/docker/rails-v6/myapp6/docker-stack.yml was saved - checking if this effects /home/maciej/docker/rails-v6/myapp6
+[2023-10-18 12:46:28.221] [INFO] Sending autorun event
