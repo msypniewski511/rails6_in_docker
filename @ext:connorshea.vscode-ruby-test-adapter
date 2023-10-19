@@ -148,3 +148,7 @@
 [2023-10-18 20:37:31.277] [INFO] Sending autorun event
 [2023-10-19 04:07:46.491] [INFO] /home/maciej/docker/rails-v6/myapp6/docker-stack.yml was saved - checking if this effects /home/maciej/docker/rails-v6/myapp6
 [2023-10-19 04:07:46.493] [INFO] Sending autorun event
+[2023-10-19 04:36:24.426] [INFO] /home/maciej/docker/rails-v6/myapp6/Dockerfile.prod was saved - checking if this effects /home/maciej/docker/rails-v6/myapp6
+[2023-10-19 04:36:24.426] [INFO] Sending autorun event
+[2023-10-19 04:36:38.672] [INFO] /home/maciej/docker/rails-v6/myapp6/Dockerfile.prod was saved - checking if this effects /home/maciej/docker/rails-v6/myapp6
+[2023-10-19 04:36:38.672] [INFO] Sending autorun event

@@ -39,9 +39,11 @@ COPY Gemfile* /usr/src/app/
 WORKDIR /usr/src/app
 RUN bundle install
 
-RUN rails webpacker:install
+# RUN rails webpacker:install
 
 COPY . /usr/src/app/
+
+RUN bin/rails assets:precompile
 
 RUN ["chmod", "+x", "/usr/src/app/wait-for"]
 
