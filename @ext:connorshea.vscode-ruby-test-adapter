@@ -121,3 +121,30 @@
 [2023-10-18 12:44:52.852] [INFO] Configuration changed
 [2023-10-18 12:46:28.221] [INFO] /home/maciej/docker/rails-v6/myapp6/docker-stack.yml was saved - checking if this effects /home/maciej/docker/rails-v6/myapp6
 [2023-10-18 12:46:28.221] [INFO] Sending autorun event
+[2023-10-18 19:59:16.004] [INFO] Test Explorer found
+[2023-10-18 19:59:16.004] [INFO] Creating adapter for /home/maciej/docker/rails-v6/myapp6
+[2023-10-18 19:59:16.004] [INFO] Initializing Ruby adapter
+[2023-10-18 19:59:16.004] [INFO] Registering adapter for /home/maciej/docker/rails-v6/myapp6
+[2023-10-18 19:59:16.005] [INFO] Loading Ruby tests...
+[2023-10-18 19:59:16.005] [INFO] Loading Minitest tests...
+[2023-10-18 19:59:16.005] [INFO] Getting a list of Minitest tests in suite with the following command: bundle exec rake -R $EXT_DIR vscode:minitest:list
+[2023-10-18 19:59:16.042] [INFO] Initialization finished
+[2023-10-18 19:59:17.294] [INFO] Configuration changed
+[2023-10-18 19:59:18.253] [INFO] Configuration changed
+[2023-10-18 19:59:18.319] [INFO] Configuration changed
+[2023-10-18 19:59:20.809] [DEBUG] Passing raw output from dry-run into getJsonFromOutput.
+[2023-10-18 19:59:20.809] [DEBUG] START_OF_TEST_JSON{"version":"5.20.0","examples":[]}END_OF_TEST_JSON
+
+[2023-10-18 19:59:20.810] [DEBUG] Parsing the below JSON:
+[2023-10-18 19:59:20.810] [DEBUG] {"version":"5.20.0","examples":[]}
+[2023-10-18 19:59:33.498] [INFO] /home/maciej/docker/rails-v6/myapp6/docker-stack.yml was saved - checking if this effects /home/maciej/docker/rails-v6/myapp6
+[2023-10-18 19:59:33.498] [INFO] Sending autorun event
+[2023-10-18 20:15:37.932] [INFO] /home/maciej/docker/rails-v6/myapp6/docker-stack.yml was saved - checking if this effects /home/maciej/docker/rails-v6/myapp6
+[2023-10-18 20:15:37.933] [INFO] Sending autorun event
+[2023-10-18 20:33:29.659] [INFO] /home/maciej/docker/rails-v6/myapp6/.env/production/database was saved - checking if this effects /home/maciej/docker/rails-v6/myapp6
+[2023-10-18 20:33:29.659] [INFO] Sending autorun event
+[2023-10-18 20:33:37.833] [INFO] Configuration changed
+[2023-10-18 20:37:31.276] [INFO] /home/maciej/docker/rails-v6/myapp6/docker-stack.yml was saved - checking if this effects /home/maciej/docker/rails-v6/myapp6
+[2023-10-18 20:37:31.277] [INFO] Sending autorun event
+[2023-10-19 04:07:46.491] [INFO] /home/maciej/docker/rails-v6/myapp6/docker-stack.yml was saved - checking if this effects /home/maciej/docker/rails-v6/myapp6
+[2023-10-19 04:07:46.493] [INFO] Sending autorun event

@@ -15,7 +15,9 @@ services:
     restart: always
 
   database:
-    image: postgres:12
+    image: postgres
+    # environment:
+    #   POSTGRES_PASSWORD: korwa
     env_file:
       - .env/production/database
     volumes:
